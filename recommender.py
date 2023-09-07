@@ -4,6 +4,9 @@ import time
 from dotenv import load_dotenv
 from sentence_transformers import SentenceTransformer
 
+from transformers import pipeline
+model = pipeline("feature-extraction", model="Supabase/gte-small")
+
 # define colors 
 RED = "\033[91m"
 GREEN = "\033[92m"
